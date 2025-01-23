@@ -11,6 +11,21 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        glow: "glow 2s ease-in-out infinite", // Define the glow animation
+      },
+      keyframes: {
+        glow: {
+          "0%, 100%": {
+            textShadow:
+                "0 0 5px #E5E5E6, 0 0 10px #E5E5E6, 0 0 20px #8A2BE2, 0 0 40px #8A2BE2",
+          },
+          "50%": {
+            textShadow:
+                "0 0 10px #E5E5E6, 0 0 20px #E5E5E6, 0 0 40px #8A2BE2, 0 0 80px #8A2BE2",
+          },
+        },
+      },
     },
   },
   plugins: [],
